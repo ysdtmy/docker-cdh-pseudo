@@ -28,5 +28,5 @@ RUN sudo -u hdfs hdfs namenode -format
 
 # Service start
 ADD files /tmp/files
-CMD sudo sh  /tmp/files/cdh-pseudo-init.sh;/bin/bash
+CMD sudo sh  /tmp/files/cdh-pseudo-init.sh;tail -f /dev/null
 
